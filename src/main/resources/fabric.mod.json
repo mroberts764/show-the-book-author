@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "show-the-book-author",
+	"version": "${version}",
+	"name": "Show the Author",
+	"description": "Display the author of a written book!",
+	"authors": [
+		"hyperxctive"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/show-the-book-author/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.hyper.ShowTheBookAuthor"
+		],
+		"client": [
+			"com.hyper.ShowTheBookAuthorClient"
+		],
+		"modmenu": [
+			"com.hyper.config.STBAModMenu"
+		]
+	},
+	"mixins": [
+		"show-the-book-author.mixins.json",
+		{
+			"config": "show-the-book-author.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

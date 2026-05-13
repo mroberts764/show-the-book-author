@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "com.hyper.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"MinecraftClientMixin",
+		"WrittenBookItemMixin",
+		"BookScreenMixin",
+		"BookScreenAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
