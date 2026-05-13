@@ -1,6 +1,5 @@
 package com.hyper.gui;
 
-import com.hyper.data.BookDataHolder;
 import io.github.cottonmc.cotton.gui.client.BackgroundPainter;
 import io.github.cottonmc.cotton.gui.client.LightweightGuiDescription;
 import io.github.cottonmc.cotton.gui.widget.*;
