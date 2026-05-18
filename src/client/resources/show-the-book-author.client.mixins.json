@@ -6,6 +6,8 @@
 		"MinecraftClientMixin",
 		"WrittenBookItemMixin",
 		"BookScreenMixin",
+		"LecternScreenMixin",
+		"BookScreenAuthorMixin",
 		"BookScreenAccessor"
 	],
 	"injectors": {

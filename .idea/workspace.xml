@@ -4,36 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e56d921-2756-4ecf-a9db-ba096d780422" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/com/hyper/ShowTheBookAuthorClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/com/hyper/config/STBAConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/com/hyper/config/STBAConfigScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/com/hyper/config/STBAModMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/com/hyper/data/BookDataHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/com/hyper/gui/ExampleGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/com/hyper/gui/ExampleScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/com/hyper/mixin/client/BookScreenAccessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/com/hyper/mixin/client/BookScreenMixin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/com/hyper/mixin/client/MinecraftClientMixin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/com/hyper/mixin/client/WrittenBookItemMixin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/resources/show-the-book-author.client.mixins.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hyper/ShowTheBookAuthor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hyper/mixin/ExampleMixin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/show-the-book-author/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/show-the-book-author.mixins.json" afterDir="false" />
+    <list default="true" id="3e56d921-2756-4ecf-a9db-ba096d780422" name="Changes" comment="Synced files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/com/hyper/data/BookDataHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/com/hyper/data/BookDataHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/com/hyper/mixin/client/BookScreenMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/com/hyper/mixin/client/BookScreenMixin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/java/com/hyper/mixin/client/WrittenBookItemMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/java/com/hyper/mixin/client/WrittenBookItemMixin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/resources/show-the-book-author.client.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/resources/show-the-book-author.client.mixins.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +61,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -120,33 +97,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.Build show-the-book-author-1.21.10.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build show-the-book-author-template-1.21.11.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.show-the-book-author-1.21.10 [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.show-the-book-author-1.21.10 [runClient].executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.show-the-book-author-template-1.21.11 [:net.fabricmc.devlaunchinjector.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.show-the-book-author-template-1.21.11 [build].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/micha/Documents/show-the-book-author-1.21.10&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build show-the-book-author-1.21.10.executor": "Run",
+    "Gradle.Build show-the-book-author-template-1.21.11.executor": "Run",
+    "Gradle.show-the-book-author-1.21.10 [build].executor": "Run",
+    "Gradle.show-the-book-author-1.21.10 [runClient].executor": "Debug",
+    "Gradle.show-the-book-author-template-1.21.11 [:net.fabricmc.devlaunchinjector.Main.main()].executor": "Run",
+    "Gradle.show-the-book-author-template-1.21.11 [build].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/micha/Documents/show-the-book-author-1.21.10",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Gradle.show-the-book-author-1.21.10 [build]">
     <configuration name="show-the-book-author-1.21.10 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -224,9 +202,30 @@
       <workItem from="1775245554452" duration="5099000" />
       <workItem from="1778537574468" duration="7000" />
     </task>
+    <task id="LOCAL-00001" summary="Synced files">
+      <option name="closed" value="true" />
+      <created>1778630991122</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1778630991122</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Synced files">
+      <option name="closed" value="true" />
+      <created>1778631133683</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1778631133683</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Synced files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Synced files" />
   </component>
 </project>

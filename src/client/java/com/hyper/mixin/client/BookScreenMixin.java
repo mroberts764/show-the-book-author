@@ -1,6 +1,7 @@
 package com.hyper.mixin.client;
 
 import com.hyper.config.STBAConfig;
+import com.hyper.data.BookAuthorHolder;
 import com.hyper.data.BookDataHolder;
 import com.hyper.gui.ExampleGui;
 import me.shedaniel.autoconfig.AutoConfig;
@@ -21,12 +22,21 @@ public abstract class BookScreenMixin {
     @Inject(method = "init", at = @At("TAIL"))
     private void initGui(CallbackInfo ci) {
 
+        BookAuthorHolder holder = (BookAuthorHolder) this;
+
+        if (holder.stba$getAuthor() == null) {
+            holder.stba$setAuthor(BookDataHolder.pendingAuthor);
+        }
+
+        BookDataHolder.pendingAuthor = null;
+
+        String author = holder.stba$getAuthor();
+
+        if (author == null) return;
+
         STBAConfig config = AutoConfig
                 .getConfigHolder(STBAConfig.class)
                 .getConfig();
-
-        String author = BookDataHolder.lastAuthor;
-        if (BookDataHolder.lastAuthor == null) return;
 
         int bgColor = 0xFF000000 | config.backgroundColor;
         int authColor = 0xFF000000 | config.authorColor;
@@ -36,22 +46,24 @@ public abstract class BookScreenMixin {
         gui.getRootPanel().validate(gui);
     }
 
-    @Inject(method = "renderBackground", at = @At("TAIL"))
+    @Inject(method = "render", at = @At("TAIL"))
     private void renderAuthor(DrawContext context, int mouseX, int mouseY, float delta, CallbackInfo ci) {
 
-            int x = 10;
-            int y = 10;
+        if (gui == null) return;
 
-            context.getMatrices().pushMatrix();
-            context.getMatrices().translate(x, y);
+        int x = 10;
+        int y = 10;
 
-            gui.getRootPanel().paint(context, 0, 0, mouseX, mouseY);
+        context.getMatrices().pushMatrix();
+        context.getMatrices().translate(x, y);
 
-            context.getMatrices().popMatrix();
-    }
+        gui.getRootPanel().paint(context, 0, 0, mouseX, mouseY);
 
-    @Inject(method = "closeScreen", at = @At("TAIL"))
-    private void clearAuthor(CallbackInfo ci) {
-        BookDataHolder.lastAuthor = null;
+        context.getMatrices().popMatrix();
+
+        if (((BookAuthorHolder)this).stba$getAuthor() != null
+                && BookDataHolder.pendingAuthor != null) {
+            BookDataHolder.pendingAuthor = null;
+        }
     }
 }

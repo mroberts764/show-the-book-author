@@ -1,7 +1,6 @@
 package com.hyper.mixin.client;
 
 import com.hyper.data.BookDataHolder;
-import com.mojang.authlib.GameProfile;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -18,15 +17,14 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class WrittenBookItemMixin {
 
     @Inject(method = "use", at = @At("HEAD"))
-    private void onUse(World world, PlayerEntity user, Hand hand, CallbackInfoReturnable<ActionResult> cir) {
+    private void stba$onUse(World world, PlayerEntity user, Hand hand, CallbackInfoReturnable<ActionResult> cir) {
 
         ItemStack stack = user.getStackInHand(hand);
 
         var data = stack.get(DataComponentTypes.WRITTEN_BOOK_CONTENT);
-        if (data != null) {
-            if (!data.author().equals(BookDataHolder.lastAuthor)) {
-                BookDataHolder.lastAuthor = data.author();
-            }
-        }
+
+        if (data == null) return;
+
+        BookDataHolder.pendingAuthor = data.author();
     }
 }
